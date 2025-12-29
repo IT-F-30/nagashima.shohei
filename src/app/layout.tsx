@@ -14,8 +14,8 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Nagashima Shohei | Monolithic Portfolio",
-  description: "A distinctive portfolio of an software engineer.",
+  title: "Nagashima Shohei | Portfolio",
+  description: "Software Engineer Portfolio",
 };
 
 export default function RootLayout({
@@ -24,11 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${syne.variable} ${geistSans.variable} scroll-smooth`}>
+    <html lang="ja" className={`${syne.variable} ${geistSans.variable}`}>
       <body className="antialiased">
-        <div className="noise-bg" />
         {children}
       </body>
     </html>
   );
 }
+
