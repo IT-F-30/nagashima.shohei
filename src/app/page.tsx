@@ -98,7 +98,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10" />
                 <div className="absolute inset-0 bg-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="absolute bottom-8 left-8 z-20">
-                  <span className="text-cyan-400 font-mono text-xs mb-2 block">0{i} // SYSTEM</span>
+                  <span className="text-cyan-400 font-mono text-xs mb-2 block">0{i} {"//"} SYSTEM</span>
                   <h3 className="text-3xl font-syne font-bold mb-4">Core Engine Project</h3>
                   <div className="flex gap-2">
                     {["Rust", "WebAssembly", "React"].map(tag => (
