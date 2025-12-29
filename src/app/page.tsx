@@ -135,18 +135,11 @@ export default function Home() {
         </h2>
         <div className="flex gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/it-f-30"
             className="flex items-center gap-2 text-neutral-500 hover:text-sky-600 transition-colors"
           >
             <Github size={18} />
             <span className="text-sm">GitHub</span>
-          </a>
-          <a
-            href="mailto:hello@example.com"
-            className="flex items-center gap-2 text-neutral-500 hover:text-sky-600 transition-colors"
-          >
-            <Mail size={18} />
-            <span className="text-sm">Email</span>
           </a>
         </div>
       </motion.section>
@@ -154,7 +147,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="pt-8 border-t border-neutral-200">
         <p className="text-xs text-neutral-400 mono">
-          © 2024 Nagashima Shohei
+          © 2025 Nagashima Shohei
         </p>
       </footer>
     </main>
