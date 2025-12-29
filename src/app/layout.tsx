@@ -24,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={`${syne.variable} ${geistSans.variable}`}>
-      <body className="antialiased">
+    <html lang="ja" className={`${syne.variable} ${geistSans.variable}`} suppressHydrationWarning>
+      <body className="antialiased" suppressHydrationWarning>
         {children}
       </body>
     </html>
