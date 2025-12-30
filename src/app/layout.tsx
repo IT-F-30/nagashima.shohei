@@ -15,7 +15,7 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "Nagashima Shohei | Portfolio",
-  description: "Software Engineer Portfolio",
+  description: "Engineer Portfolio",
 };
 
 export default function RootLayout({

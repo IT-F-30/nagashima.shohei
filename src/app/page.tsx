@@ -1,15 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Server, Network, Database, Terminal} from "lucide-react";
+import { Github, Server, Network, Database, Terminal, Cpu} from "lucide-react";
 
 export default function Home() {
   const skills = [
-    { category: "Backend", items: ["Rust", "Go", "Python", "JavaScript"] },
-    { category: "Infrastructure", items: ["Docker", "Linux", "AWS", "Nginx"] },
-    { category: "Network", items: ["TCP/IP", "HTTP", "DNS", "Load Balancing"] },
-    { category: "Database", items: ["PostgreSQL", "MySQL", "Redis", "MongoDB"] },
-    { category: "DevOps", items: ["Git", "GitHub", "CI/CD", "Jenkins"] },
+    { category: "Backend", items: ["Docker", "Linux", "Cloudinit" ] },
+    { category: "Language", items: ["Rust", "Go", "Python", "TypeScript"] },
+    { category: "Homelab", items: ["Proxmox", "Kubernetes",] },
+    { category: "OnPremise", items: ["NextCloud", "immich" ,"Asterisk"] },
   ];
 
   return (
@@ -70,10 +69,9 @@ export default function Home() {
             <div key={group.category} className="card p-5">
               <h3 className="font-medium text-neutral-700 mb-3 flex items-center gap-2">
                 {group.category === "Backend" && <Server size={14} className="text-sky-500" />}
-                {group.category === "Infrastructure" && <Terminal size={14} className="text-sky-500" />}
-                {group.category === "Network" && <Network size={14} className="text-sky-500" />}
-                {group.category === "Database" && <Database size={14} className="text-sky-500" />}
-                {group.category === "DevOps" && <Terminal size={14} className="text-sky-500" />}
+                {group.category === "Language" && <Terminal size={14} className="text-sky-500" />}
+                {group.category === "Homelab" && <Cpu size={14} className="text-sky-500" />}
+                {group.category === "OnPremise" && <Network size={14} className="text-sky-500" />}
                 {group.category}
               </h3>
               <div className="flex flex-wrap gap-2">
