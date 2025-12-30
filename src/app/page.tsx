@@ -46,11 +46,11 @@ export default function Home() {
           About
         </h2>
         <p className="text-neutral-600 leading-relaxed mb-4">
-          プログラマーとしてまだ駆け出しですが色々なコンテストなどに制欲的に参加していくつかの賞を受賞しました。
+          プログラマーとしてまだ駆け出しですが色々なコンテストなどに意欲的に参加して数多くの賞を受賞しました。
           最近では、バックエンド開発に興味を持ち、RustやGoを主に使用して開発を行っています。
         </p>
         <p className="text-neutral-500 text-sm">
-          Rustを勉強中で信頼性が高い言語を学びたいと思っています。
+          新参者ですが色々なことに意欲的に参加してネットワークエンジニアになることを目指しています。
         </p>
       </motion.section>
 
@@ -107,8 +107,11 @@ export default function Home() {
             <a href="https://jr.mitou.org/projects/2025/nextrouter" className="text-sm text-neutral-500">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="font-medium text-neutral-800">ネットワーク研究</h3>
-                <Cpu size={14} className="text-sky-500" />
-                <Zap size={14} className="text-sky-500" />
+                <div className="flex items-center gap-2 ml-3 mr-auto">
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">Rust</span>
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">Go</span>
+                </div>
+
                 <span className="mono text-xs text-neutral-400">Research</span>
               </div>
               <p className="text-sm text-neutral-500">
@@ -120,7 +123,10 @@ export default function Home() {
             <a href="https://zenjyocon.jp/" className="text-sm text-neutral-500">
               <div className="flex items-start justify-between mb-2">
                 <h3 className="font-medium text-neutral-800">ソフトウェア開発</h3>
-                <Code size={14} className="text-sky-500" />
+                <div className="flex items-center gap-2 ml-3 mr-auto">
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">Rust</span>
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">Python</span>
+                </div>
                 <span className="mono text-xs text-neutral-400">Development</span>
               </div>
               <p className="text-sm text-neutral-500">
