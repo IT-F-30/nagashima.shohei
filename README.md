@@ -2,6 +2,8 @@
 
 このプロジェクトは、私のスキルや経歴を紹介するためのポートフォリオサイトです。
 
+https://it-f-30.github.io/nagashima.shohei/
+
 ## 技術スタック
 
 - Next.js
