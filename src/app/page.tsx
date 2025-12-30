@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Server, Network, Database, Terminal, Cpu, Zap, Code } from "lucide-react";
+import { Github, Server, Network, Database, Terminal} from "lucide-react";
 
 export default function Home() {
   const skills = [
