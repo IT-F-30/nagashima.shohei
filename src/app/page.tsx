@@ -1,14 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Server, Network, Database, Terminal, Cpu} from "lucide-react";
+import { Github, Server, Network, Database, Terminal, Cpu } from "lucide-react";
 
 export default function Home() {
   const skills = [
-    { category: "Backend", items: ["Docker", "Linux", "Cloudinit" ] },
+    { category: "Backend", items: ["Docker", "Linux", "Cloudinit"] },
     { category: "Language", items: ["Rust", "Go", "Python", "TypeScript"] },
-    { category: "Homelab", items: ["Proxmox", "Kubernetes",] },
-    { category: "OnPremise", items: ["NextCloud", "immich" ,"Asterisk"] },
+    { category: "Homelab", items: ["Proxmox", "Kubernetes"] },
+    { category: "OnPremise", items: ["NextCloud", "immich", "Asterisk"] },
   ];
 
   return (
@@ -68,10 +68,18 @@ export default function Home() {
           {skills.map((group) => (
             <div key={group.category} className="card p-5">
               <h3 className="font-medium text-neutral-700 mb-3 flex items-center gap-2">
-                {group.category === "Backend" && <Server size={14} className="text-sky-500" />}
-                {group.category === "Language" && <Terminal size={14} className="text-sky-500" />}
-                {group.category === "Homelab" && <Cpu size={14} className="text-sky-500" />}
-                {group.category === "OnPremise" && <Network size={14} className="text-sky-500" />}
+                {group.category === "Backend" && (
+                  <Server size={14} className="text-sky-500" />
+                )}
+                {group.category === "Language" && (
+                  <Terminal size={14} className="text-sky-500" />
+                )}
+                {group.category === "Homelab" && (
+                  <Cpu size={14} className="text-sky-500" />
+                )}
+                {group.category === "OnPremise" && (
+                  <Network size={14} className="text-sky-500" />
+                )}
                 {group.category}
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -102,33 +110,64 @@ export default function Home() {
         </h2>
         <div className="space-y-4">
           <div className="card p-5">
-            <a href="https://jr.mitou.org/projects/2025/nextrouter" className="text-sm text-neutral-500">
+            <a
+              href="https://jr.mitou.org/projects/2025/nextrouter"
+              className="text-sm text-neutral-500"
+            >
               <div className="flex items-start justify-between mb-2">
-                <h3 className="font-medium text-neutral-800">ネットワーク研究</h3>
-                <div className="flex items-center gap-2 ml-3 mr-auto">
-                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">Rust</span>
-                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">Go</span>
+                <div className="flex items-center gap-2">
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-amber-50 text-amber-600 rounded border border-amber-100 font-bold">
+                    未踏ジュニア
+                  </span>
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-amber-50 text-amber-600 rounded border border-amber-100 font-bold">
+                    2025年度クリエーター
+                  </span>
                 </div>
-
+                <div className="flex items-center gap-2 ml-3 mr-auto">
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">
+                    Rust
+                  </span>
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">
+                    Golang
+                  </span>
+                </div>
                 <span className="mono text-xs text-neutral-400">Research</span>
               </div>
-              <p className="text-sm text-neutral-500">
-                複数の光回線を束ねて大規模ネットワークの高速化を実現する次世代ルータ <b>NextRouter</b> を開発しました
+              <p className="text-sm text-neutral-500 mb-3">
+                複数の光回線を束ねて大規模ネットワークの高速化を実現する次世代ルータ{" "}
+                <b>NextRouter</b> を開発しました
               </p>
             </a>
           </div>
           <div className="card p-5">
-            <a href="https://zenjyocon.jp/" className="text-sm text-neutral-500">
+            <a
+              href="https://zenjyocon.jp/"
+              className="text-sm text-neutral-500"
+            >
               <div className="flex items-start justify-between mb-2">
-                <h3 className="font-medium text-neutral-800">ソフトウェア開発</h3>
-                <div className="flex items-center gap-2 ml-3 mr-auto">
-                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">Rust</span>
-                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">Python</span>
+                <div className="flex items-center gap-2">
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-amber-50 text-amber-600 rounded border border-amber-100 font-bold">
+                    第1回全国情報教育コンテスト
+                  </span>
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-amber-50 text-amber-600 rounded border border-amber-100 font-bold">
+                    プログラミング技術 優秀賞
+                  </span>
                 </div>
-                <span className="mono text-xs text-neutral-400">Development</span>
+                <div className="flex items-center gap-2 ml-3 mr-auto">
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">
+                    Rust
+                  </span>
+                  <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">
+                    Python
+                  </span>
+                </div>
+                <span className="mono text-xs text-neutral-400">
+                  Development
+                </span>
               </div>
               <p className="text-sm text-neutral-500">
-                手の動きをマウスの動きに変換するソフトウェア <b>VirtualMouse-Aerial</b> を開発しました
+                手の動きをマウスの動きに変換するソフトウェア{" "}
+                <b>VirtualMouse-Aerial</b> を開発しました
               </p>
             </a>
           </div>
@@ -158,9 +197,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="pt-8 border-t border-neutral-200">
-        <p className="text-xs text-neutral-400 mono">
-          © 2025 Nagashima Shohei
-        </p>
+        <p className="text-xs text-neutral-400 mono">© 2025 Nagashima Shohei</p>
       </footer>
     </main>
   );
