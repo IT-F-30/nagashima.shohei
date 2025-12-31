@@ -128,7 +128,7 @@ export default function Home() {
                     Rust
                   </span>
                   <span className="mono text-[10px] px-1.5 py-0.5 bg-neutral-50 text-neutral-500 rounded border border-neutral-100">
-                    Golang
+                    Go
                   </span>
                 </div>
                 <span className="mono text-xs text-neutral-400">Research</span>
